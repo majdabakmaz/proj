@@ -1,6 +1,5 @@
 #!/bin/bash
 
-size=400
-find /home/username -size +$size -print
+find /home/username -size +$1 -print
 
-tar czfv backup.tgz $(find /home/username -size +$size)
+tar czfv backup.tgz $(find /home/username -size +$1)
